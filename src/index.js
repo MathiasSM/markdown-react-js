@@ -1,7 +1,7 @@
 'use strict';
 
 import markdown from 'markdown-it';
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import isPlainObject from 'lodash/lang/isPlainObject';
 import assign from 'lodash/object/assign';
@@ -14,7 +14,7 @@ import isString from 'lodash/lang/isString';
 
 
 const DEFAULT_TAGS = {
-  'html': 'span'
+  'html': Fragment
 };
 
 const DEFAULT_RULES = {
